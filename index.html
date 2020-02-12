@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>차현호 Portfolio</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Retrina Group" />
+
+        <!--  FavIcon  -->
+        <link rel="shortcut icon" href="http://placehold.it/60x60">
+
+        <!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+        <!--  Bootstrap CSS  -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <!--  Line Icon CSS  -->
+        <link rel="stylesheet" href="assets/css/LineIcons.css">
+        <!--  Font Awesome CSS  -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <!--  Animate CSS  -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--  Magnific Popup CSS  -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--  Owl-carousel CSS  -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="61">
+
+        <style type="text/css">
+                        .Skill{
+                height: 100%;
+                width: 100%;
+                margin:0 auto;
+            text-align: center;
+            padding-bottom:5rem;
+            background: rgb(231, 230, 230);
+
+            }
+            .Skill_Heeding{
+                font-family: 'Noto Sans KR', sans-serif;
+                position: relative;
+                display: inline-block;
+                font-size: 2.4em;
+                font-weight:400;
+                margin:30px 0;
+                
+            }
+            .Skill_Heeding::after{
+                position: absolute;
+                content: "";
+                top:100%;
+                height:2px;
+                width: 30px;
+                left: 0;
+                right: 70%;
+                margin:0 auto;
+                background:rgb(253, 198, 198);
+            }
+            .Skill_image_container{
+                text-align: center;
+                display: inline-block;
+                width:114px;
+                height:116px;
+                border-radius: 30px 30px;
+                
+                background-size:cover;
+                background-repeat: no-repeat;
+                margin-right: 2rem;
+                
+                box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+            }
+            .Skill_label{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background:black;
+                border-radius: 30px 30px;
+                width: 120px;
+                height:120px;
+                padding:10px;
+                opacity: 0.8;
+                font-weight: 400;
+                font-size: 1.0rem;
+                color: white;
+                visibility: hidden;
+            }
+
+            .Skill_image_container:hover .Skill_label{
+                visibility:visible;
+                animation: fadeout1 0.5s;
+                -moz-animation: fadeout1 0.5s; /* Firefox */
+                -webkit-animation: fadeout1 0.5s; /* Safari and Chrome */
+                -o-animation:fadeout1 0.5s; /* Opera */
+
+            }@keyframes fadeout1 {
+                0%{
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity:0.8;
+                }
+            }
+            @-moz-keyframes fadeout1 { /* Firefox */
+                0%{
+                    opacity: 0;
+                }
+             
+                100% {
+                    opacity:0.8;
+                }
+            }
+            @-webkit-keyframes fadeout1 { /* Safari and Chrome */
+                0%{
+                    opacity: 0;
+                }
+               
+                100% {
+                    opacity:0.8;
+                }
+            }
+            @-o-keyframes fadeout1 { /* Opera */
+                0%{
+                    opacity: 0;
+                }
+              
+                100% {
+                    opacity:0.8;
+                }
+            }
+
+            @media (max-width: 576px){
+                .Skill_image_container{
+                    width: 100px;
+                    height: 100px;
+                margin: 5px;
+                }
+                .Skill_label{
+                    width: 84px;
+                    height: 84px;
+                }
+            }
+
+
+        </style>
+
+        <!--  Pre Loader  -->
+        <div id="overlayer"></div>
+        <span class="loader"></span>
+
+        <!--    Header Start    -->
+        <header id="header" class="header fixed-top">
+            <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+                <div class="container">
+                    <!--  Navbar Toggler Button Start -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="lni-menu size-md"></span>
+                    </button>
+                    <!--  Navbar Toggler Button End -->
+                    <div class="collapse navbar-collapse" id="toggle-menu">
+                        <ul class="navbar-nav nav-pills ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#hero">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--    Header End    -->
+
+        <!--    Hero Start    -->
+        <section class="hero full-screen py-6" id="hero">
+            <div class="hero-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-content">
+                                <h1 class="text-white mb-3">CamelCase</h1>
+                                <h4 class="text-white text-capitalize mb-0"> <span class="element" data-elements="UI Designer.,Web Developer 차현호 포트폴리오."> </span></h4>
+                                <p class="text-white my-4 mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    Hero End    -->
+
+        <!--   About Start   -->
+        <section id="about" class="py-6">
+            <div class="container">
+                <div class="row" style="font-family: Noto Sans KR,sans-serif;">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h1><b>About <span style="color: red">Me</span></b></h1>
+                    </div>
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <h2 class="text-dark mb-2"><span style="font-size: 30px; font-weight: 3px;">발전하는 개발자</span></h2></p>
+                        <h6 style="color: #545454;"><b>20살 때부터 웹 프로그래밍에 관심이 많았습니다. 사람들이 정보를 얻고 정보를 공유하는 웹사이트를 자신이 직접 만든다면 얼마나 뿌듯하고 
+                            의미 있을까라는 생각에 직업으로 희망하게 되었습니다.
+                        </p>
+                        앞으로의 목표는 단순히 있는 것에 개발만 하는 개발자가 아닌 새로운 것을 도전하고 발전하는 개발자가 되는 것입니다. 현업에 종사하고 있는 개발자님들의 조언을 들어보면 항상 공부하는 개발자가 되라고 합니다. 시대가 변하면서 다양한 언어나 기술이 나오니 어찌 보면 당연한 일이라고도 생각되겠지만 개인적으로 그 의미를 깊게 생각해보면 자신만의 발전 노하우를 찾으라는 소리로도 들립니다. 어떤 프로그래밍언어나 프레임워크에 빠른 적응력으로 어디서든 업무를 파악하고 개발할 수 있는 개발자가 되는 것이 궁극적인 목표입니다. 그래서 저는 꾸준히 공부하며  발전하는 개발자가 되려고 노력하겠습니다. 
+                        <br>
+                        읽어주셔서 감사합니다.
+                        </b></h6>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--    About End    -->
+
+        <!--   Services start  -->
+        <section id="services" class="py-6" style="background-color: #E8E8E8;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h2 class="text-dark mb-3"><b>SKILLS</b></span></h2>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="margin-top: 30px;"><b>사용 언어</b></h3>
+                <div class="row">
+                    <div class="Skill_image_container" style="background-image: url('assets/img/icons8-java-144.png');">
+                        <div class="Skill_label">자바</div>
+                    </div>
+                    <div class="Skill_image_container" style="background-image: url('assets/img/icons8-javascript-240.png');">
+                        <div class="Skill_label">자바 스크립트</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 50px;"><b>사용 웹 기술</b></h3>
+                <div class="row">
+                     <div class="Skill_image_container" style="background-image: url('assets/img/icons8-html-5-144.png');">
+                        <div class="Skill_label">HTML</div>
+                    </div>
+                    <div class="Skill_image_container" style="background-image: url('assets/img/icons8-css3-144.png');">
+                        <div class="Skill_label">CSS</div>
+                    </div>
+                     <div class="Skill_image_container" style="background-image: url('assets/img/icons8-javascript-240.png');">
+                        <div class="Skill_label">자바 스크립트</div>
+                    </div>
+                    <div class="Skill_image_container" style="background-image: url('assets/img/jquery.png');">
+                        <div class="Skill_label">제이쿼리</div>
+                    </div>
+                </div>
+                <h3 style="margin-top: 50px;"><b>프레임워크</b></h3>
+                <div class="row">
+                     <div class="Skill_image_container" style="background-image: url('assets/img/icons8-spring-logo-144.png');">
+                        <div class="Skill_label">스프링</div>
+                    </div>
+                 <!--    <div class="Skill_image_container" style="background-image: url('assets/img/icons8-intellij-idea-144.png');">
+                        <div class="Skill_label">basic</div>
+                    </div>
+                    <div class="Skill_image_container" style="background-image: url('assets/img/eclipse-logo.png');">
+                        <div class="Skill_label">basic</div>
+                    </div> -->
+                </div>
+                <h3 style="margin-top: 50px;"><b>데이터베이스</b></h3>
+                <div class="row">
+                     <div class="Skill_image_container" style="background-image: url('assets/img/mysql-logo.png');">
+                        <div class="Skill_label">MYSQL</div>
+                    </div>
+                    <div class="Skill_image_container" style="background-image: url('assets/img/mariadb-logo.png');">
+                        <div class="Skill_label">MARIADB</div>
+                    </div>
+                </div>
+                 <h3 style="margin-top: 50px;"><b>기타</b></h3>
+                <div class="row">
+                     <div class="Skill_image_container" style="background-image: url('assets/img/icons8-github-150.png');">
+                        <div class="Skill_label">github</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--   Services End  -->
+        <!--  Portfolio Start  -->
+        <section id="portfolio" class="portfolio py-6 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <h2 class="text-dark mb-3"><span><b>PROJECTS</b></span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-6">
+                        <img style="width: 90%; height: 100%; " src="assets/img/boardGet.PNG"/>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row" style="margin-top: 10px;">
+                            <div class="col-2">
+                                    <span style="color: red; font-size: 40px;">01</span>
+                            </div>
+                            <div calss="col-10">
+                                <span style="font-size: 40px; font-weight: 20; margin-right: 80px;" >Board Project</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <span style="color: #545454; margin-top: 20px;">
+                                    회원가입, 로그인, 글등록, 글수정, 댓글, 좋아요,
+                                    <br>
+                                    게시글 검색 기능을 포함하고있는 게시판 프로젝트입니다.
+                                </span>
+                            </div>
+                            <div class="col-12">
+                                    <span style="color: #545454; margin-top: 20px;">
+                                        <b>참여 인원</b> 1 명
+                                    </span>
+                            </div>
+                            <div class="col-12">
+                                    <span style="color: #545454; margin-top: 5px;">
+                                        <b>개발 기간</b> 2019.09 ~ 2019.11
+                                    </span>
+                            </div>
+                            <div class="col-12">
+                                    <span style="color: #545454; margin-top: 20px;">
+                                        <span style="color: red;">Client</span> 
+                                        <span style="margin-left: 10px;">bootstrap, jquery, js </span>
+                                    </span>
+                            </div>
+                            <div class="col-12">
+                                    <span style="color: #545454; margin-top: 5px;">
+                                        <span style="color: red;">Server</span> 
+                                        <span style="margin-left: 10px;">Java, mybatis, mysql </span>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6" style="margin-top: 20px;">
+                                <a href="https://github.com/ChaHyunHo/CamelCaseBoard">
+                                    <i style="font-size: 70px; color: black;" class="fa fa-github"></i>
+                                </a>
+                                Github Go
+                            </div>
+                            <div class="col-6" style="margin-top: 20px;" >
+                                    <a href="portfolio-single.html">
+                                        <i style="font-size: 70px; color: black;" class="fa fa-linkedin"></i>
+                                    </a>
+                                    Project Introduction
+                                </div>
+                           
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--   Portfolio End   -->
+
+        <!--   Footer Start  -->
+        <footer class="bg-dark py-6 text-center">
+            <div class="container">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://github.com/ChaHyunHo"><i style="font-size: 70px;" class="fa fa-github"></i></a>
+                    </li>
+                </ul>
+                <p class="mt-4 mb-0 text-white">Email : <a style="color: white;" href="https://mail.naver.com/">chamym@naver.com</a> & <a href="https://mail.google.com/" style="color: white;">gusgh2254@gmail.com</a> </p>
+                <p class="mt-4 mb-0 text-white"><b>차현호 PH. 010-2909-1275</b></p>
+            </div>
+        </footer>
+        <!--   Footer End  -->
+
+        <!-- Return to Top -->
+        <a href="javascript:void(0)" class="return-to-top"><i class="lni-arrow-up"></i></a>
+
+        <!--  JavaScripts  -->
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <!--  Bootstrap Js  -->
+        <script src="assets/js/bootstrap.js"></script>
+        <!--  Easing Js  -->
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <!--  Typed Js  -->
+        <script src="assets/js/typed.js"></script>
+        <!--  Count Js  -->
+        <script src="assets/js/jquery.countTo.js"></script>
+        <!--  Isotope Js  -->
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <!--  Pop UP JS Js  -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--  Owl carousel Js  -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!--  Wow Js  -->
+        <script src="assets/js/wow.min.js"></script>
+        <!--  Custom JS  -->
+        <script src="assets/js/uone.js"></script>
+
+    </body>
+</html>
